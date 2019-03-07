@@ -8,19 +8,15 @@ module.exports = function(app) {
 	});
 	
 	// Restraints
-	model.ensureIndex({ fieldName: 'google_id', unique: true, sparse: true }, function (err) {
+	model.ensureIndex({ fieldName: 'google_id', unique: true }, function (err) {
 		if (err) console.log(err.message);
 	});
 	
-	model.ensureIndex({ fieldName: 'google_token', unique: true, sparse: true }, function (err) {
+	model.ensureIndex({ fieldName: 'google_token', unique: true }, function (err) {
 		if (err) console.log(err.message);
 	});
 	
-	model.ensureIndex({ fieldName: 'username', unique: true, sparse: true }, function (err) {
-		if (err) console.log(err.message);
-	});
-	
-	model.ensureIndex({ fieldName: 'date_created', unique: false, sparse: true }, function (err) {
+	model.ensureIndex({ fieldName: 'username', unique: true }, function (err) {
 		if (err) console.log(err.message);
 	});
 	

@@ -1,7 +1,4 @@
-{"google_id":"25869","google_token":"beef","username":"super_mario","date_created":"11-31-18","_id":"WYQdUPDGf4XKsjDe"}
-{"google_id":"12345","google_token":"abcde","username":"jeff_bridges","date_created":"12-31-18","_id":"YyZHQuFMQdlV0Po8"}
-{"google_id":"599","google_token":"wendys","username":"baconator","date_created":"11-31-18","_id":"zs4Mo0kuJdhrXvpf"}
-{"$$indexCreated":{"fieldName":"google_id","unique":true,"sparse":true}}
-{"$$indexCreated":{"fieldName":"google_token","unique":true,"sparse":true}}
-{"$$indexCreated":{"fieldName":"username","unique":true,"sparse":true}}
-{"$$indexCreated":{"fieldName":"date_created","unique":false,"sparse":true}}
+{"google_id":"555555","google_token":"asdkfjwieo234us8df","username":"bob_the_builder","date_created":"11-22-33","_id":"O3S83PwlOW5V18lR"}
+{"$$indexCreated":{"fieldName":"google_id","unique":true,"sparse":false}}
+{"$$indexCreated":{"fieldName":"google_token","unique":true,"sparse":false}}
+{"$$indexCreated":{"fieldName":"username","unique":true,"sparse":false}}

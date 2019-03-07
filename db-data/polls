@@ -1,8 +1,1 @@
-{"title":"Pollio","creator_id":"25869","choices":["good","bad","neither","idk bro"],"date_created":"Today","active":true,"secret":false,"access_code":-1,"_id":"uckTq8Y9BP09ImQy"}
-{"$$indexCreated":{"fieldName":"title","unique":false,"sparse":true}}
-{"$$indexCreated":{"fieldName":"creator_id","unique":false,"sparse":true}}
-{"$$indexCreated":{"fieldName":"active","unique":false,"sparse":true}}
-{"$$indexCreated":{"fieldName":"private","unique":false,"sparse":true}}
-{"$$indexCreated":{"fieldName":"access_code","unique":true,"sparse":true}}
-{"$$indexCreated":{"fieldName":"choices","unique":false,"sparse":true}}
-{"$$indexCreated":{"fieldName":"date_created","unique":false,"sparse":true}}
+{"title":"Can we fix it?","creator_id":"12345","choices":["Yes we can!","I give up!","idk"],"date_created":"Today","active":true,"secret":false,"access_code":-1,"_id":"bMnaEStQ0lu7as4J"}

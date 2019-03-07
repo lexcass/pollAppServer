@@ -1,5 +1,1 @@
-{"poll_id":"uckTq8Y9BP09ImQy","user_id":"WYQdUPDGf4XKsjDe","choice":"idk bro","_id":"gQCOsLW41ARaGaws"}
-{"$$indexCreated":{"fieldName":"user_id","unique":false,"sparse":true}}
-{"$$indexCreated":{"fieldName":"poll_id","unique":false,"sparse":true}}
-{"$$indexCreated":{"fieldName":"choice","unique":false,"sparse":true}}
-{"$$indexCreated":{"fieldName":"date_voted","unique":false,"sparse":true}}
+{"user_id":"O3S83PwlOW5V18lR","poll_id":"bMnaEStQ0lu7as4J","choice":"Yes we can!","date_created":"Today","_id":"BpFafeazPvWnSkxy"}
