@@ -14,14 +14,4 @@ module.exports = function (app) {
 	app.use('/polls', new PollService( { Model: PollModel } ));
 	app.use('/users', new UserService( { Model: UserModel } ));
 	app.use('/votes', new VoteService( { Model: VoteModel } ));
-	
-	
-	// Query tests
-	// Note: directory 'db-data' contains database entries.
-	
-	var TestQuery = require('../queries/TestQuery').TestQuery;
-	new TestQuery().execute(app);
-	
-	var TestVoteQuery = require('../queries/TestVoteQuery').TestVoteQuery;
-	new TestVoteQuery().execute(app);
 };

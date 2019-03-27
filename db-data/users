@@ -1,4 +1,4 @@
-{"google_id":"555555","google_token":"asdkfjwieo234us8df","username":"bob_the_builder","date_created":"11-22-33","_id":"O3S83PwlOW5V18lR"}
+{"google_id":"333","google_token":"4444","username":"Gerardo","date_created":"2019-03-27 18:15:20","_id":"2CZbRR5Gqoa9242R"}
 {"$$indexCreated":{"fieldName":"google_id","unique":true,"sparse":false}}
 {"$$indexCreated":{"fieldName":"google_token","unique":true,"sparse":false}}
 {"$$indexCreated":{"fieldName":"username","unique":true,"sparse":false}}

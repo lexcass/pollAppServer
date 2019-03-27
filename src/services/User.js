@@ -1,4 +1,20 @@
 const Service = require('feathers-nedb').Service;
+const moment = require('moment');
+
+// JSON Schema
+/*
+	CREATE
+	{
+		"google_id": "XXXX",
+		"google_token": "XXXX",
+		"username": "XXXXX"
+	}
+	
+	PATCH
+	{
+		"username": "XXXXX"
+	}
+*/
 
 
 class UserService extends Service {
@@ -12,28 +28,19 @@ class UserService extends Service {
 	}
 	
 	create(data, params) {
-		
-		// Required fields
-		if (data.google_id === undefined ||
-			data.google_token === undefined ||
-			data.username === undefined)
-		{
-			return null;
-		}
-		
+		data.date_created	= moment().format('YYYY-MM-DD HH:mm:ss');
 		return super.create(data, params);
 	}
 	
-	update(id, data, params) {
-		
-		return super.update(id, data, params);
-	}
+	update(id, data, params) {}
 	
 	remove(id, params) {
 		return super.remove(id, params);
 	}
   
-	patch(id, data, params){}
+	patch(id, data, params) {
+		return super.patch(id, data, params);
+	}
   
 	setup(app, path) {}
 }

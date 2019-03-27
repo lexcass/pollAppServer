@@ -1,4 +1,23 @@
 const Service = require('feathers-nedb').Service;
+const moment = require('moment');
+
+
+// JSON Schema
+/*
+	CREATE
+	{
+		"creator_id": "XXXX",
+		"title": "XXXX",
+		"choices": ["XXX", "XXX", "XXX"],
+		"secret": true/false,
+		"access_code": "XXX or -1 if secret = false"
+	}
+	
+	PATCH
+	{
+		"active": true/false
+	}
+*/
 
 
 class PollService extends Service {
@@ -12,41 +31,22 @@ class PollService extends Service {
 	}
 	
 	create(data, params) {
-		
-		// Required fields
-		if (data.title === undefined ||
-			data.creator_id === undefined ||
-			data.choices === undefined)
-		{
-			return null;
-		}
-		
-		// Defaults
 		data.active = true;
-		
-		if (data.secret === undefined)
-		{
-			data.secret = false;
-		}
-		if (data.access_code === undefined)
-		{
-			data.access_code = -1;
-		}
+		data.date_created = moment().format('YYYY-MM-DD HH:mm:ss');
 		
 		return super.create(data, params);
 	}
 	
 	
-	update(id, data, params) {
-		
-		return super.update(id, data, params);
-	}
+	update(id, data, params) {}
 	
 	remove(id, params) {
 		return super.remove(id, params);
 	}
   
-	patch(id, data, params){}
+	patch(id, data, params) {
+		return super.patch(id, data, params);
+	}
   
 	setup(app, path) {}
 }

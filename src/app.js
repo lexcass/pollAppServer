@@ -34,10 +34,7 @@ app.use(favicon(path.join(app.get('public'), 'favicon.ico')));
 app.use('/', express.static(app.get('public')));
 
 
-// -------------------------------- Services ---------------------------------------
 app.configure(express.rest());
-	//.use('/polls', new PollService());
-// ---------------------------------------------------------------------------------
 
 app.configure(socketio());
 

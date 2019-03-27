@@ -1,4 +1,16 @@
 const Service = require('feathers-nedb').Service;
+const moment = require('moment');
+
+
+// JSON Schema
+/*
+	CREATE
+	{
+		"user_id": "XXXX",
+		"poll_id": "XXXX",
+		"choice": "XXXXX"
+	}
+*/
 
 
 class VoteService extends Service {
@@ -12,22 +24,11 @@ class VoteService extends Service {
 	}
 	
 	create(data, params) {
-		
-		// Required fields
-		if (data.user_id === undefined ||
-			data.poll_id === undefined ||
-			data.choice === undefined)
-		{
-			return null;
-		}
-		
+		data.date_created = moment().format('YYYY-MM-DD HH:mm:ss');
 		return super.create(data, params);
 	}
 	
-	update(id, data, params) {
-		
-		return super.update(id, data, params);
-	}
+	update(id, data, params) {}
 	
 	remove(id, params) {
 		return super.remove(id, params);
