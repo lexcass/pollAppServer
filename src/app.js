@@ -16,6 +16,7 @@ const service = require('feathers-nedb');
 
 const middleware = require('./middleware');
 const services = require('./services');
+const serviceHooks = require('./hooks/service');
 const appHooks = require('./app.hooks');
 const channels = require('./channels');
 
@@ -38,10 +39,12 @@ app.configure(express.rest());
 
 app.configure(socketio());
 
+
 // Configure other middleware (see `middleware/index.js`)
 app.configure(middleware);
 // Set up our services (see `services/index.js`)
 app.configure(services);
+app.configure(serviceHooks);
 // Set up event channels (see channels.js)
 app.configure(channels);
 
