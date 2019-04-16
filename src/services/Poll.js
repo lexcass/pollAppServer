@@ -11,11 +11,18 @@ const moment = require('moment');
 		"choices": ["XXX", "XXX", "XXX"],
 		"secret": true/false,
 		"access_code": "XXX or -1 if secret = false"
+		"expiration_date": DATETIME
+		"results": [int, int, int]
 	}
 	
 	PATCH
 	{
 		"active": true/false
+	}
+	
+	PATCH
+	{
+		"results": [int, int, int]
 	}
 */
 
