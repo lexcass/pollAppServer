@@ -8,7 +8,7 @@ module.exports = function(app) {
 	});
 
 	// Restraints
-	/*
+	
 	model.ensureIndex({ fieldName: 'google_id', unique: true }, function (err) {
 		if (err) console.log(err.message);
 	});
@@ -20,6 +20,6 @@ module.exports = function(app) {
 	model.ensureIndex({ fieldName: 'username', unique: true }, function (err) {
 		if (err) console.log(err.message);
 	});
-	*/
+
 	return model;
 };
