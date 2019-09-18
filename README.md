@@ -1,6 +1,10 @@
-# poll-app-server
+# Pollio
 
-> 
+> Pollio is a simple-to-use poll creation and participation application. It's designed to collect user opinions over various subjects and in various environments ranging from academia and professional settings to entertainment among like-minded people. Poll App is being developed using React Native for its Android/iOS clients and Feathers.js for its Node.js-powered server.
+
+## Database Design
+
+In the root directory of the project, you can find the design document for the database schemas titled "Poll_App_Capstone_DB_Schemas.pdf" that details the functionality of the application's backend.
 
 ## About
 
